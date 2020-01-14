@@ -811,7 +811,7 @@ module.exports = function( THREE ) {
 
 			if ( scope.enabled === false ) return;
 
-			event.preventDefault();
+			//event.preventDefault();
 			event.stopPropagation();
 
 			switch ( event.touches.length ) {
