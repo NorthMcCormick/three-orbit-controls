@@ -109,6 +109,10 @@ module.exports = function(THREE) {
       state = STATE.NONE;
     };
 
+    this.isBeingManuallyRotated = function() {
+      return state === STATE.ROTATE || state === STATE.TOUCH_ROTATE;
+    };
+
     // this method is exposed, but perhaps it would be better if we can make it private...
     this.update = (function() {
       var offset = new THREE.Vector3();
