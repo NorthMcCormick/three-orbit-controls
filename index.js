@@ -15,6 +15,7 @@ module.exports = function(THREE) {
   //    Pan - right mouse, or arrow keys / touch: three finter swipe
 
   function OrbitControls(object, domElement) {
+    console.log('Custom orbit controls - 0.1');
     this.object = object;
 
     this.domElement = domElement !== undefined ? domElement : document;
